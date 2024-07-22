@@ -22,18 +22,9 @@ if ($conn->connect_error) {
 
 // SQL query to obtain totals for the specified date range
 $sql = "SELECT 
-           SUM(total_revenue) AS total_revenue,
            SUM(cost_of_revenue) AS total_cost_revenue,
-           SUM(gross_profit) AS total_gross_profit,
-           SUM(premium_revenue) AS total_premium_revenue,
            SUM(premium_cost_revenue) AS total_premium_cost_revenue,
-           SUM(premium_gross_profit) AS total_premium_gross_profit,
-           SUM(ad_revenue) AS total_ad_revenue,
            SUM(ad_cost_revenue) AS total_ad_cost_revenue,
-           SUM(ad_gross_profit) AS total_ad_gross_profit,
-           SUM(mau) AS total_mau,
-           SUM(premium_mau) AS total_premium_mau,
-           SUM(ad_mau) AS total_ad_mau,
            SUM(salesandmarketing_cost) AS total_salesandmarketing_cost,
            SUM(researchanddev_cost) AS total_researchanddev_cost,
            SUM(generalandadmin_cost) AS total_generalandadmin_cost
@@ -54,18 +45,9 @@ $table['cols'] = array(
 );
 
 $categories = [
-    'Total Revenue' => $data['total_revenue'],
     'Total Cost of Revenue' => $data['total_cost_revenue'],
-    'Total Gross Profit' => $data['total_gross_profit'],
-    'Total Premium Revenue' => $data['total_premium_revenue'],
     'Total Premium Cost Revenue' => $data['total_premium_cost_revenue'],
-    'Total Premium Gross Profit' => $data['total_premium_gross_profit'],
-    'Total Ad Revenue' => $data['total_ad_revenue'],
     'Total Ad Cost Revenue' => $data['total_ad_cost_revenue'],
-    'Total Ad Gross Profit' => $data['total_ad_gross_profit'],
-    'Total MAU' => $data['total_mau'],
-    'Total Premium MAU' => $data['total_premium_mau'],
-    'Total Ad MAU' => $data['total_ad_mau'],
     'Total Sales and Marketing Cost' => $data['total_salesandmarketing_cost'],
     'Total Research and Development Cost' => $data['total_researchanddev_cost'],
     'Total General and Admin Cost' => $data['total_generalandadmin_cost']
