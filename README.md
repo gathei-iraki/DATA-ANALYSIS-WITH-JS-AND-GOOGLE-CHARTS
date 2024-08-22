@@ -10,6 +10,7 @@
 2.Visualization for the expenses data is located in the expenses folder. <br>
 3.Visualization for the performance data is located in the performance folder. <br>
 4.Visualization for the sales data is located in the sales folder. <br>
-5.Code for simple visualization using static data is located in the simpler_version folder.
-
+5.Code for simple visualization using static data is located in the simpler_version folder.<br>
+<b>NB:</b>The Spotify Quarterly dataset has been used for the Exepenses and Performance code. <br>
+The sales-data-sample dataset has been used for the Sales code.
 
